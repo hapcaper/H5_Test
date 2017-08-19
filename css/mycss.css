@@ -1,0 +1,52 @@
+.left_title{
+    left: -149px;
+    position: fixed;
+    width: 150px;
+    height: 800px;
+    background-color: transparent;
+    top: 50px;
+    transition-duration: 0.6s;
+    display: block;
+    padding: 10px;
+}
+
+.left_title a{
+    margin: 10px;
+}
+.left_title:hover{
+    background-color: transparent;
+    left: 0px;
+
+}
+
+
+.head{
+    align-items:center;
+    top:0px;
+    position: relative;
+    height: 50px;
+    background-color: #ededed;
+
+
+}
+
+.content{
+    position: inherit;
+    margin: 100px 300px;
+
+}
+
+.index {
+    position: fixed;
+    height: 800px;
+    width: 3px;
+    top: 50px;
+    left: 0px;
+    transition-duration: 0.4s;
+    background-color: transparent;
+}
+
+.left_title:hover index {
+    background-color: transparent;
+
+}

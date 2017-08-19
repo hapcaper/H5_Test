@@ -1,0 +1,60 @@
+body{
+	margin-top:20px;
+    background: rgba(247, 247, 247, 0);
+    color:#00FF00;
+    font-family:monospace;
+}
+
+#header{
+	width:100%;
+	text-align:center;
+}
+
+#wrapper{
+	width:100%;
+	height:100%;
+}
+
+#navigation{
+	width:100%;
+	font-size:15px;
+	text-align:center;
+	margin-top:50px;
+}
+
+#content{
+	width:100%;
+	height:400px;
+	margin-top:150px;
+}
+
+#code{
+	margin:auto;
+	width:500px;
+	font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";
+	font-size:14px;
+}
+
+#code .comments{
+	color: #107f23;
+}
+
+#code .space{
+	margin-left:7px;
+}
+
+#footer{
+	width:100%;
+	margin-top:30px;
+	font-size:15px;
+	text-align:center;
+}
+
+#errorMsg{
+	width:100%;
+	text-align:center;
+	font-size:24px;
+	position:absolute;
+	top:100px;
+	left:0;
+}
