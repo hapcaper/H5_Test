@@ -15,5 +15,6 @@ var Message = new Vue({
     data: {
         msg:"dwadwa"
     }
-})
+});
+
 
