@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="http://localhost:63342" />
     <title>Vue.test</title>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -15,7 +16,7 @@
         <h1 class="h1 text-center">WeBoh_vueTest</h1>
     </div>
     <div class="row">
-        <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
             <div id="weibo_item"  class="panel panel-default">
 
                 <div class="panel-body">
@@ -31,16 +32,45 @@
                     <button class="btn btn-danger">CLICK</button>
                 </div>
             </div>
-            <p id="Message">{{msg}}</p>
-
-            <!--<div class="jumbotron" >
-                qqqqqdddd
-            </div>-->
         </div>
 
     </div>
 
-    <div id="item_test"><webo-item></webo-item></div>
+    <div id="main_msg_body" >
+
+        <div class="row" v-for=" weibo in weibolist ">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <div class="panel panel-default">
+
+                    <div class="panel-body">
+                        <h3 class="h5"><img class="icon" :src="weibo.user.profile_image_url"> {{ weibo.user.name }} </h3>
+
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h4 class="h4">{{ weibo.created_at}}</h4>
+                            </div>
+                            <P>
+                                {{ weibo.text }}
+                            </P>
+
+                        </div>
+                        <button class="btn btn-danger">CLICK</button>
+                    </div>
+                </div>
+
+                <!--<div class="jumbotron" >
+                    qqqqqdddd
+                </div>-->
+            </div>
+
+        </div>
+    </div>
+    <div class="row text-center">
+        <button class="btn btn-danger" onclick="getMoreWeibo()">More Weibo </button>
+    </div>
+
+
+
 
 
 
@@ -53,7 +83,9 @@
 <script src="js/bootstrap.min.js" ></script>
 <script src="js/vue.js"></script>
 <script src="js/vue_components.js"></script>
+<script src="author2/author.js"></script>
 <script src="js/main_vue.js"></script>
+<script src="js/js.cookie-2.1.4.min.js"></script>
 
 
 </html>
